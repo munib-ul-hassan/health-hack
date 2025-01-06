@@ -158,7 +158,7 @@ const Card = (
                 sales
                   // href="https://health-hack-hub.com/sl-removing-harmful-foods/"
                   // target="blank"
-                   onClick={() => navigate("/digital-transformational-products")}
+                   onClick={() => navigate("/products/e-books/sp-removing-harmful-foods")}
 
                   className="shadow-custom px-4  rounded-lg w-full py-3  text-sm transition transform duration-200 hover:scale-105 text-black">
                   <div className="flex items-center justify-between  gap-4 py-2">

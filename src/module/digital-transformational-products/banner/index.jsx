@@ -4,11 +4,13 @@ import book_underline from "../../../assets/book_underline.svg";
 import banner_sales from "../../../assets/banner_sales.svg";
 import banner_sales_main from "../../../assets/banner_sales_main.png";
 import { IoIosStar } from "react-icons/io";
-
 import "./index.css";
-import { useNavigate } from "react-router";
-export const SalesBanner = () => {
+import { useNavigate } from "react-router-dom";
 
+
+
+
+export const SalesBanner = () => {
    const navigate=useNavigate();
   // pp-removing-harmful-foods
   return (
@@ -49,7 +51,7 @@ export const SalesBanner = () => {
                 </p>
               </div>
               <div>
-                <p className="text-4xl !font-medium font-josefin max-[900px]:text-2xl">$34.90</p>
+                <p className="text-4xl !font-medium font-josefin max-[900px]:text-2xl">$7.99</p>
               </div>
               <div className="flex gap-2 items-center pt-2 pb-8 max-[786px]:pb-2 text-mainColor text-2xl max-[900px]:text-lg max-[900px]:gap-1">
                 <IoIosStar />

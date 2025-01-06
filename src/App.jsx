@@ -13,44 +13,48 @@ import { Home } from "./module/home";
 import { Blog } from "./module/blog";
 import { Community } from "./module/community";
 import { EBook } from "./module/product/ebook";
+import { AllCourses } from "./module/product/allCourses";
+import { EbookCourseDetails } from "./module/product/ebook/courseDetails";
+import { Signup } from "./module/authentication/signup";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Home />} />
         <Route path="/start" element={<Start />} />
         <Route path="/opt-in" element={<OptIn />} />
         <Route path="/p-opt-in" element={<PoptIn />} />
         <Route path="/newsletter" element={<Newsletter />} />
-        <Route path="/digital-transformational-products" element={<DigitalTransformationalProducts/>} />
-        <Route path="blog" element={<Blog/>}/>
-        <Route path="community" element={<Community/>}/>
-
-        
-
-        <Route path="/products-the-community-supports" element={<ProductsCommunity />} />
-         <Route path="products" element={<Products/>}>
-         <Route  index element={<Courses/>}/>
-         <Route path="courses" element={<Courses/>}/>
-         {/* <Route path="e-book" element={<EBook/>}/> */}
-         <Route path="e-books">
-            {/* Nested route under /products/e-books */}
+        {/* <Route path="/digital-transformational-products" element={<DigitalTransformationalProducts/>} /> */}
+        <Route path="blog" element={<Blog />} />
+        <Route path="community" element={<Community />} />
+        <Route path="signup" element={<Signup/>}/>
+        <Route
+          path="/products-the-community-supports"
+          element={<ProductsCommunity />}
+        />
+        <Route path="products" element={<Products />}>
+          <Route index element={<AllCourses />} />
+          <Route path="courses">
+            <Route index element={<AllCourses />} />
+            {/* <Route path="pp-removing-harmful-foods" element={<Courses/>}/> */}
+          </Route>
+          {/* <Route path="e-book" element={<EBook/>}/> */}
+          <Route path="e-books">
             <Route index element={<EBook />} />
             <Route
               path="sp-removing-harmful-foods"
-              element={<DigitalTransformationalProducts/>}
+              element={<DigitalTransformationalProducts />}
             />
             <Route
               path="pp-removing-harmful-foods"
-              element={<Courses/>}
+              element={<EbookCourseDetails />}
             />
           </Route>
-         
-          <Route/>
-        </Route>
 
-        
+          <Route />
+        </Route>
       </Routes>
     </>
   );

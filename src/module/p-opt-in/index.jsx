@@ -1,7 +1,6 @@
 import React from "react";
 import "./index.css";
-
-
+import MetaPixel from "../../metapixel";
 
 export const PoptIn = () => {
    
@@ -56,7 +55,6 @@ export const PoptIn = () => {
         
         </div>
       </div>
-   
     </div>
   );
 

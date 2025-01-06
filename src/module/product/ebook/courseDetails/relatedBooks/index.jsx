@@ -1,45 +1,20 @@
 import React from "react";
-import star6 from "../../../../assets/star6.svg";
-import img_1 from "../../../../assets/img_1.png";
-import img_2 from "../../../../assets/img_2.png";
-import img_3 from "../../../../assets/img_3.png";
-import img_4 from "../../../../assets/img_4.png";
+import img_1 from "../../../../../assets/img_1.png";
+import img_2 from "../../../../../assets/img_2.png";
+import img_3 from "../../../../../assets/img_3.png";
+import img_4 from "../../../../../assets/img_4.png";
 import { IoIosStar } from "react-icons/io";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { NavLink } from "react-router-dom";
+import star6 from "../../../../../assets/star6.svg";
 
-
-export const BookSection = () => {
+export const EbookRelatedSection = () => {
   return (
     <div className="w-full">
       <div>
-        <div className="w-mainWidth mx-auto my-8">
-          <div className="shadow-productCardShadow w-80 py-4 px-8 rounded-lg flex gap-4 items-center justify-between">
-            <div>
-              <p>All</p>
-            </div>
-            <div className="bg-black px-6 py-2 rounded-lg text-white">
-              <p>E-Books</p>
-            </div>
-            <div>
-              <p>Courses</p>
-            </div>
-          </div>
-          <div className="flex justify-between items-center my-8">
-            <div>
-              <p></p>
-            </div>
-            <div>
-              <p className="font-normal font-josefin text-lg">
-                Showing <span className="text-SecondaryColor">1-8</span> of 15 E-Books
-              </p>
-            </div>
-            <div>
-              <p></p>
-            </div>
-          </div>
+        <div className="w-mainWidth mx-auto">
+     
         </div>
-        <div className="w-full bg-mainBgColor py-12">
+        <div className="w-full bg-mainBgColor py-20">
                  <div className="w-mainWidth mx-auto my-20">
                 
                      <div className="grid grid-cols-4 gap-8 mb-8 mt-24">
@@ -76,14 +51,14 @@ export const BookSection = () => {
                            </p>
                          </div>
              
-                         <NavLink to="/products/e-books/pp-removing-harmful-foods" className="absolute -bottom-10">
+                         <div className="absolute -bottom-10">
                            <div className="text-lg font-medium flex items-center justify-center gap-3 uppercase text-black border-black bg-white border-2 px-6 rounded-xl py-2 my-4">
                              <p className="text-black text-sm">BUY NOW</p>
                              <div className="bg-black rounded-full">
                                <IoIosArrowRoundForward className="text-white text-xl" />
                              </div>
                            </div>
-                         </NavLink>
+                         </div>
                        </div>
              
                        <div className="w-full cursor-pointer flex items-center flex-col gap-4 p-5 border-[1px] border-solid border-[#E0E0E0] rounded-2xl bg-white relative">

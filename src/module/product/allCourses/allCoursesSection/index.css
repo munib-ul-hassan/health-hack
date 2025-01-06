@@ -1,0 +1,58 @@
+.all_books_slider .slick-list{
+    height: 630px !important;
+}
+.all_books_slider .slick-track{
+    padding-top: 100px !important;
+}
+.all_books_slider .slick-prev{
+    top: 105% !important;
+    left: 43% !important;
+    z-index: 10;
+    height: 50px !important;
+    width: 50px !important;
+    /* background-color: black !important; */
+}
+.all_books_slider .slick-next{
+    top: 105% !important;
+     right: 43% !important;
+     z-index: 10;
+     height: 50px !important;
+     width: 50px !important;
+     /* background-color: black !important; */
+
+}
+.all_books_slider .slick-dots{
+    bottom: -50px !important;
+    left: -8px;
+
+
+}
+.all_books_slider .slick-dots li.slick-active button:before{
+    opacity: 0 !important;
+}
+
+.all_books_slider .slick-dots li.slick-active button:before, .all_books_slider .slick-dots li button:before{
+    opacity: 0 !important;
+}
+.all_books_slider .slick-dots li button{
+    /* border: 1px solid #E0E0E0;
+    border-radius: 20px !important; */
+    font-size: 11px !important;
+    width: 30px !important;
+    height: 30px !important;
+    border: 1px solid #E0E0E0;
+}
+.all_books_slider .slick-dots li{
+    margin: 0px 8px !important;
+
+}
+.all_books_slider .slick-dots li button{
+    /* width: 30px !important;
+    height: 30px !important; */
+    /* border: 1px solid #E0E0E0; */
+    border-radius: 4px !important;
+}
+.all_books_slider .slick-dots li.slick-active button{
+     background-color: black !important;
+     color: white !important;
+}

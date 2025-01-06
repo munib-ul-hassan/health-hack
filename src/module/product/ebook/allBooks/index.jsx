@@ -10,6 +10,7 @@ import Slider from "react-slick";
 import "./index.css";
 import ArrowSliderRight from "../../../../assets/arrow2.svg";
 import ArrowSliderLeft from "../../../../assets/arrow1.svg";
+import { NavLink } from "react-router-dom";
 
 export const AllBooks = () => {
 
@@ -124,14 +125,14 @@ const CustomPrevArrow = ({ className, style, onClick }) => (
                     </p>
                   </div>
 
-                  <div className="absolute -bottom-10">
+                  <NavLink to="/products/e-books/pp-removing-harmful-foods" className="absolute -bottom-10">
                     <div className="text-lg font-medium flex items-center justify-center gap-3 uppercase text-black border-black bg-white border-2 px-6 rounded-xl py-2 my-4">
                       <p className="text-black text-sm">BUY NOW</p>
                       <div className="bg-black rounded-full">
                         <IoIosArrowRoundForward className="text-white text-xl" />
                       </div>
                     </div>
-                  </div>
+                  </NavLink>
                 </div>
                 </div>
 

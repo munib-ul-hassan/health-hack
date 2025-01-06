@@ -5,8 +5,12 @@ import left_collan from "../../../../assets/left_collan.svg";
 import book_underline from "../../../../assets/book_underline.svg";
 import home_banners from "../../../../assets/home_banners.svg";
 import banner_book from "../../../../assets/banner_book.svg";
+import { useNavigate } from "react-router-dom";
 
 export const Banner = () => {
+
+  const navigate=useNavigate();
+
   return (
     <div className="w-full">
       <div className="w-full">
@@ -40,7 +44,7 @@ export const Banner = () => {
                     your gut.
                   </p>
 
-                  <div className="flex gap-4 items-center">
+                  <div className="flex gap-4 items-center" onClick={() => navigate("/products/e-books/pp-removing-harmful-foods")}>
                     <button className="border-mainColor border-2 border-solid uppercase text-mainColor  py-2 px-8 rounded-lg max-[900px]:text-sm max-[600px]:text-xs max-[480px]:px-3">
                       Buy Book Now
                     </button>

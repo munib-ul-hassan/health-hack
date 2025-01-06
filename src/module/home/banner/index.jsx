@@ -20,7 +20,7 @@ export const Banner = () => {
               <img src={right_collan} alt="right_collan" />
             </div>
             <div className="w-mainWidth mx-auto my-24 flex justify-between gap-5 items-start">
-              <div className="flex flex-col gap-4 w-3/4">
+              <div className="flex flex-col gap-4 w-4/5">
                 <p className="font-normal text-2xl font-josefin">
                   The Science of Extraordinary Health
                 </p>
