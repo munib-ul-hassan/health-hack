@@ -82,7 +82,6 @@ export const RelatedProduct = () => {
               <h1 className="font-roboto font-medium text-xl text-center">
                 Anti-Inflammatory Eating Made Simple
               </h1>
-
               <div className=" flex items-center gap-2">
                 <p className="text-xl font-medium">$34.90</p>
               </div>

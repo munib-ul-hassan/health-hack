@@ -27,12 +27,16 @@ export default {
       },
       fontFamily: {
         josefin: ['"Josefin Sans"', 'serif'], // Custom font family
+<<<<<<< HEAD
         roboto: ['Roboto', 'sans-serif'], 
         pattaya: ['Pattaya', 'sans-serif'],
         optima:['Optima']
       },
       borderRadius: {
         'custom-radius': '100% 0% 50% 50% / 0% 0% 100% 100%',
+=======
+        roboto: ['Roboto', 'sans-serif'],    // Custom font family
+>>>>>>> 351f8d9b274c840c470c4e25f75cca27bd49fec6
       },
     },
   },
